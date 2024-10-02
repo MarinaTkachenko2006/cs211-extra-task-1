@@ -36,4 +36,12 @@ int main()
 
     //assert ê ô-è get_seconds()
     assert(get_seconds(3800) == 20);
+
+    //assert ê ô-è time_to_utc()
+    assert(fabs(time_to_utc(+0, 12.0) - 12.0) < DBL_EPSILON);
+    assert(fabs(time_to_utc(+1, 12.0) - 11.0) < DBL_EPSILON);
+    assert(fabs(time_to_utc(-1, 12.0) - 13.0) < DBL_EPSILON);
+    assert(fabs(time_to_utc(-11, 18.0) - 5.0) < DBL_EPSILON);
+    assert(fabs(time_to_utc(-1, 0.0) - 1.0) < DBL_EPSILON);
+    assert(fabs(time_to_utc(-1, 23.0) - 0.0) < DBL_EPSILON);
 }
