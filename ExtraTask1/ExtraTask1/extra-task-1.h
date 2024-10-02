@@ -17,6 +17,7 @@ int get_hours(int);
 //determine the minutes part of a time in seconds
 int get_minutes(int);
 
+//determine the seconds part of a time in seconds
 int get_seconds(int);
 
 double time_to_utc(int, double);

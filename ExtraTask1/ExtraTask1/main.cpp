@@ -33,4 +33,7 @@ int main()
 
     //assert ê ô-è get_minutes()
     assert(get_minutes(3800) == 3);
+
+    //assert ê ô-è get_seconds()
+    assert(get_seconds(3800) == 20);
 }
