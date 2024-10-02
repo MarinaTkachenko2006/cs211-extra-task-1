@@ -29,10 +29,10 @@ int get_hours(int seconds)
     return seconds / 3600;
 }
 
-//int get_minutes(int seconds)
-//{
-
-//}
+int get_minutes(int seconds)
+{
+    return (seconds - get_hours(seconds) * 3600) / 60;
+}
 
 //int get_seconds(int seconds)
 //{

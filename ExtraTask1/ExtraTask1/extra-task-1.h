@@ -14,6 +14,7 @@ double to_24_hour_clock(double);
 //determine the hours part of a time in seconds
 int get_hours(int);
 
+//determine the minutes part of a time in seconds
 int get_minutes(int);
 
 int get_seconds(int);
