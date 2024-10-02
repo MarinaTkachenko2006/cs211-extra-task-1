@@ -24,10 +24,10 @@ double to_24_hour_clock(double hours)
     return f % 24 + hours - f;
 }
 
-//int get_hours(int seconds)
-//{
-
-//}
+int get_hours(int seconds)
+{
+    return seconds / 3600;
+}
 
 //int get_minutes(int seconds)
 //{
